@@ -1,0 +1,20 @@
+{
+  "name": "unicorn-vscode-theme",
+  "displayName": "Unicorn VS Code Theme",
+  "description": "Unicorn Dark & Light – a crisp, colorful theme",
+  "version": "0.1.0",
+  "publisher": "nischdev",
+  "engines": { "vscode": "^1.74.0" },
+  "categories": ["Themes"],
+  "icon": "icon.png",
+  "contributes": {
+    "themes": [
+      { "label": "Unicorn Dark",  "uiTheme": "vs-dark", "path": "./themes/Unicorn Dark-color-theme.json" },
+      { "label": "Unicorn Light", "uiTheme": "vs",      "path": "./themes/Unicorn Light-color-theme.json" }
+    ]
+  },
+  "scripts": {
+    "build": "vsce package",
+    "package": "vsce package"
+  }
+}
