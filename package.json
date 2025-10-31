@@ -1,20 +1,45 @@
 {
   "name": "unicorn-vscode-theme",
   "displayName": "Unicorn VS Code Theme",
-  "description": "Unicorn Dark & Light – a crisp, colorful theme",
+  "description": "Unicorn Dark & Light — a soft pastel theme for VS Code",
+  "icon": "icon.png",
   "version": "0.1.0",
   "publisher": "nischdev",
-  "engines": { "vscode": "^1.74.0" },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
   "categories": ["Themes"],
-  "icon": "icon.png",
+  "keywords": [
+    "unicorn",
+    "pastel",
+    "dark",
+    "light",
+    "purple",
+    "aqua",
+    "pink",
+    "soft"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nischal-prsntr/unicorn-vscode-theme.git"
+  },
+  "homepage": "https://github.com/nischal-prsntr/unicorn-vscode-theme#readme",
   "contributes": {
     "themes": [
-      { "label": "Unicorn Dark",  "uiTheme": "vs-dark", "path": "./themes/Unicorn Dark-color-theme.json" },
-      { "label": "Unicorn Light", "uiTheme": "vs",      "path": "./themes/Unicorn Light-color-theme.json" }
+      {
+        "label": "Unicorn Dark (Pastel)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Unicorn Dark-color-theme.json"
+      },
+      {
+        "label": "Unicorn Light (Pastel)",
+        "uiTheme": "vs",
+        "path": "./themes/Unicorn Light-color-theme.json"
+      }
     ]
   },
   "scripts": {
-    "build": "vsce package",
-    "package": "vsce package"
+    "package": "vsce package",
+    "build": "vsce package"
   }
 }
